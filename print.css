@@ -1,0 +1,35 @@
+/* Stylesheet för att dölja element vid utskrift av .pdf-fil */
+
+nav ul {
+    display: none;
+}
+
+.button {
+    display: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+#hero {
+    background-color: #fff;
+    color: #000;
+}
+
+.card {
+    box-shadow: none;
+}
+
+.card a {
+    display: none;
+}
+
+.info-card {
+    box-shadow: none;
+}
+
+.info-card a {
+    text-decoration: none;
+    color: #000;
+}

@@ -388,7 +388,7 @@ video {
 
 /* Responsivitet */
 
-/* Mobil - media queries */
+/* Skärmbredd < 900px */
 @media (max-width: 900px) {
 
     nav ul {
@@ -400,6 +400,7 @@ video {
     }
 }
 
+/* Skärmbredd < 750px */
 @media (max-width: 750px) {
 
     #hero {

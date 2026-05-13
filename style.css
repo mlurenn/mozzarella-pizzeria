@@ -450,11 +450,42 @@ video {
     }
 }
 
+#welcome-banner{
+    font-size: 2rem;
+}
+
+/* Dark mode */
 .dark-mode {
     background-color: #1a1a1a;
     color: #f0f0f0;
 }
 
-#welcome-banner{
-    font-size: 2rem;
+.dark-mode header {
+    background-color: #111;
+}
+
+.dark-mode footer {
+    background-color: #111;
+}
+
+.dark-mode #hero {
+    background-color: #2a2a2a;
+}
+
+.dark-mode .card {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+}
+
+.dark-mode .info-card {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+}
+
+.dark-mode #daily-special {
+    background-color: #2a2a2a;
+}
+
+.dark-mode #welcome-banner {
+    background-color: #2a2a2a;
 }

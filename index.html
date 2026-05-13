@@ -10,6 +10,8 @@
         <title>Mozzarella Pizzeria</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="print.css" media="print">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -17,7 +19,7 @@
         <header>
             <nav>
                 <a href="index.html" id="logo">Mozzarella Pizzeria</a>
-                <ul>
+                <ul id="nav-menu">
                     <li><a href="meny.html">Meny</a></li>
                     <li><a href="lunch.html">Lunch</a></li>
                     <li><a href="om-oss.html">Om oss</a></li>
@@ -43,19 +45,19 @@
                 <h2>Populära kategorier</h2>
                 <div class="card-container">
                     <div class="card">
-                        <img src="bilder/pizza.jpg" alt="En klassisk italiens pizza.">
+                        <img src="bilder/pizza.jpg" alt="En klassisk italiens pizza." onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
                         <h3>Pizza</h3>
                         <p>Klassiska och moderna pizzor bakade i stenugn.</p>
                         <a href="meny.html">Se alla pizzor -></a>
                     </div>
                     <div class="card">
-                        <img src="bilder/kebab.jpg" alt="Grillad kebab med tillbehör.">
+                        <img src="bilder/kebab.jpg" alt="Grillad kebab med tillbehör." onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
                         <h3>Kebab</h3>
                         <p>Grillad kebab med hemgjord sås och tillbehör.</p>
                         <a href="meny.html">Se alla kebabrätter -></a>
                     </div>
                     <div class="card">
-                        <img src="bilder/pasta.jpg" alt="Italiensk pasta med sås.">
+                        <img src="bilder/pasta.jpg" alt="Italiensk pasta med sås." onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
                         <h3>Pasta</h3>
                         <p>Italiensk pasta med hmgjorda såser och färska råvaror.</p>
                         <a href="meny.html">Se alla pastarätter -></a>

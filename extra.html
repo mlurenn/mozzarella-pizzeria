@@ -9,6 +9,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Extrasida - Mozzarella Pizzeria</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -16,7 +18,7 @@
         <header>
             <nav>
                 <a href="index.html" id="logo">Mozzarella Pizzeria</a>
-                <ul>
+                <ul id="nav-menu">
                     <li><a href="meny.html">Meny</a></li>
                     <li><a href="lunch.html">Lunch</a></li>
                     <li><a href="om-oss.html">Om oss</a></li>
@@ -31,10 +33,23 @@
         <main>
             <section id="hero">
                 <h1>Extrasida</h1>
-                <p>Innehåller en extra video.</p>
+                <p>Innehåller en extra video och funktioner.</p>
             </section>
 
             <section id="content">
+
+                <div id="welcome-banner">
+                    <p>🍕 Välkommen! Just nu: 10% rabatt på alla pizzor!</p>
+                </div>
+                <button class="button" id="toggle-banner">Visa/Dölj erbjudande</button>
+                <button class="button" onclick="toggleDarkMode()">Mörkt Läge</button>                
+
+                <div id="daily-special">
+                    <h2>Dagens rekomendation</h3>
+                    <p id="special-item"></p>
+                </div>
+                <script src="randomizer.js"></script>
+
                 <div class="extra-container">
                     <h2>Se hur pizza kan toppas!</h2>
                     <div class="video-container">

@@ -12,8 +12,6 @@
         <link rel="stylesheet" href="print.css" media="print">
     </head>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="script.js"></script>
     <body>
         <header>
             <nav>
@@ -41,6 +39,12 @@
             </section>
 
             <section id="content">
+
+                <div id="welcome-banner">
+                    <p>🍕 Välkommen! Just nu: 10% rabatt på alla pizzor!</p>
+                </div>
+                <button class="button" id="toggle-banner">Visa/Dölj erbjudande</button>
+
                 <h2>Populära kategorier</h2>
                 <div class="card-container">
                     <div class="card">
@@ -121,5 +125,7 @@
             </div>
         </footer>
 
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -33,7 +33,7 @@ function zoomOut(element){
 // Task 4 - jquery
 $(document).ready(function(){
     
-    // Welcome banner
+    // Erbjudande
     $("#toggle-banner").click(function () {
         $("#welcome-banner").fadeToggle(600);
     });
@@ -46,6 +46,12 @@ $(document).ready(function(){
     $("#nav-menu a").click(function (){
         if($(window).width() <= 900){
             $("#nav-menu").slideUp(300);
+        }
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() > 900) {
+            $("#nav-menu").removeAttr("style");
         }
     });
 });
